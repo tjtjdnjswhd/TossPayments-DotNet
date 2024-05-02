@@ -19,7 +19,7 @@
         /// 구매자가 가상계좌에 입금을 아직 안 했다면, 결제를 취소해도 환불해야 되는 금액이 없기 때문에 이 파라미터를 추가할 필요가 없습니다.
         /// 입금 전에는 부분 취소를 할 수 없고 전체 금액 취소만 할 수 있습니다.
         /// </summary>
-        public required RefundReceiveAccount RefundReceiveAccount { get; set; }
+        public RefundReceiveAccount RefundReceiveAccount { get; set; }
 
         /// <summary>
         /// 취소할 금액 중 면세 금액입니다. 값을 넣지 않으면 기본값인 0으로 설정됩니다.
