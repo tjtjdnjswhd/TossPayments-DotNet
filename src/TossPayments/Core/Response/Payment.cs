@@ -54,7 +54,7 @@ public class Payment
     /// 결제수단입니다.
     /// 카드, 가상계좌, 간편결제, 휴대폰, 계좌이체, 문화상품권, 도서문화상품권, 게임문화상품권 중 하나입니다.
     /// </summary>
-    public required string Method { get; set; }
+    public required PaymentMethod Method { get; set; }
 
     /// <summary>
     /// 총 결제 금액입니다.
@@ -73,7 +73,7 @@ public class Payment
     /// 결제 처리 상태입니다.
     /// READY, IN_PROGRESS, WAITING_FOR_DEPOSIT, DONE, CANCELED, PARTIAL_CANCELED, ABORTED, EXPIRED 값을 가질 수 있습니다.
     /// </summary>
-    public required string Status { get; set; }
+    public required PaymentStatus Status { get; set; }
 
     /// <summary>
     /// 결제가 일어난 날짜와 시간 정보입니다.
